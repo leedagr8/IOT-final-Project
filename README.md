@@ -1,12 +1,12 @@
 # IOT-final-Project
 A repository containing our Final project for IOT course
 
-#Contributors
+# Contributors
 *Leon Johnson, Senior Computer Engineer*
 *Lawrence Battle, Senior Electrical Engineer*
 *Eric Swepston, Junior Electrical Engineer*
 
-#Description
+# Description
 
 Implement an app named “49er Sense” on your Android mobile device, that closely models the CPI inTouch app:
 [https://play.google.com/store/apps/details?id=com.alarm.alarmmobile.android.cpi&hl=en] In addition to the sensors and 
@@ -37,7 +37,7 @@ Re (2): Weather report is pulled by the server at the user’s home location fro
 Re (3): The video feed from the webcam is channeled through the router to the server to the app.
 Re (4) & (5): Direct communication between server and app.
 
-#Phase 1 Deliverables
+# Phase 1 Deliverables
 * App on your mobile device
 * Htdocs php codes on your server
 * Java codes for sensors/actuators
