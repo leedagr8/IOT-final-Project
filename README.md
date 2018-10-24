@@ -24,13 +24,13 @@ Java Classes with their own MySQL databases. These DBs will be stored on actual 
 IoT for later phases of the final project. In this phased implementation, the server php codes will execute the correct .java
 code based on user request.
 
-The app will display the following:
+##### The app will display the following:
 
-1.The home total energy consumption and the breakdown by categories
-2.The weather report for today and next 5 days
-3.Video feed on request
-4.Account settings
-5.Notifications for user (using an Inbox)
+1. The home total energy consumption and the breakdown by categories
+2. The weather report for today and next 5 days
+3. Video feed on request
+4. Account settings
+5. Notifications for user (using an Inbox)
 Re (1): Each device is requested by the server for its energy consumption; the numbers are added by category; 
 the results are reported to the app.
 Re (2): Weather report is pulled by the server at the user’s home location from the cloud, and sent to the app.
