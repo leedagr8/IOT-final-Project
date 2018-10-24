@@ -31,11 +31,11 @@ code based on user request.
 3. Video feed on request
 4. Account settings
 5. Notifications for user (using an Inbox)
-Re (1): Each device is requested by the server for its energy consumption; the numbers are added by category; 
+6. Re (1): Each device is requested by the server for its energy consumption; the numbers are added by category; 
 the results are reported to the app.
-Re (2): Weather report is pulled by the server at the user’s home location from the cloud, and sent to the app.
-Re (3): The video feed from the webcam is channeled through the router to the server to the app.
-Re (4) & (5): Direct communication between server and app.
+7. Re (2): Weather report is pulled by the server at the user’s home location from the cloud, and sent to the app.
+8. Re (3): The video feed from the webcam is channeled through the router to the server to the app.
+9. Re (4) & (5): Direct communication between server and app.
 
 # Phase 1 Deliverables
 * App on your mobile device
