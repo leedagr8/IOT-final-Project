@@ -4,7 +4,7 @@ A repository containing our Final project for IOT course
 # Contributors
 + *Leon Johnson, Senior Computer Engineer*
 + *Lawrence Battle, Senior Electrical Engineer*
-+ *Eric Swepston, Junior Electrical Engineer*
++ *Eric Swepston, Junior Computer Engineer*
 
 # Description
 
