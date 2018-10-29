@@ -4,23 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:layout_editor_absoluteY="81dp">
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/Logout_Button"
-        android:layout_width="229dp"
-        android:layout_height="37dp"
+        android:layout_width="226dp"
+        android:layout_height="39dp"
         android:layout_marginStart="78dp"
         android:layout_marginLeft="78dp"
         android:layout_marginEnd="77dp"
         android:layout_marginRight="77dp"
-        android:layout_marginBottom="55dp"
-        android:text="Button"
+        android:layout_marginBottom="48dp"
+        android:text="@string/button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:text="Logout" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/Sense_View"
@@ -33,12 +32,12 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="35dp"
         android:gravity="center"
-        android:text="TextView"
+        android:text="@string/senseText"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/User_Name_IP"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="49er Sense" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/User_Name_IP"
@@ -51,12 +50,13 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="35dp"
         android:ems="10"
-        android:hint="Enter User Name"
+        android:hint="@string/user_name_ip"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/Password_IP"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Sense_View" />
+        app:layout_constraintTop_toBottomOf="@+id/Sense_View"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/Password_IP"
@@ -68,12 +68,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="Enter Password"
+        android:hint="@string/enter_password_ip"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/User_Name_IP" />
+        app:layout_constraintTop_toBottomOf="@+id/User_Name_IP"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/Login_Button"
@@ -84,41 +85,42 @@
         android:layout_marginTop="45dp"
         android:layout_marginEnd="48dp"
         android:layout_marginRight="48dp"
-        android:text="Button"
+        android:layout_marginBottom="165dp"
+        android:text="@string/Login_button"
         app:layout_constraintEnd_toStartOf="@+id/Reset_Button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Password_IP"
-        tools:text="Log In" />
+        app:layout_constraintTop_toBottomOf="@+id/Password_IP" />
 
     <Button
         android:id="@+id/Reset_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginRight="80dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
         android:layout_marginBottom="47dp"
-        android:text="Button"
+        android:text="@string/reset_button"
         app:layout_constraintBottom_toTopOf="@+id/Register_Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Password_IP"
-        tools:text="Reset" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/Register_Button"
         android:layout_width="226dp"
         android:layout_height="39dp"
-        android:layout_marginStart="82dp"
-        android:layout_marginLeft="82dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
         android:layout_marginTop="46dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginRight="76dp"
-        android:layout_marginBottom="28dp"
-        android:text="Button"
+        android:layout_marginEnd="78dp"
+        android:layout_marginRight="78dp"
+        android:layout_marginBottom="97dp"
+        android:text="@string/Register_Button"
         app:layout_constraintBottom_toTopOf="@+id/Logout_Button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Login_Button"
-        tools:text="Register" />
+        app:layout_constraintVertical_bias="0.0" />
 
+</android.support.constraint.ConstraintLayout>

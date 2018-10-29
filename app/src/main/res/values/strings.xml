@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">IOT_Final_Project</string>
     <string name="testbutton">TestButton</string>
+    <string name="button">Log Out</string>
+    <string name="Register_Button">Register</string>
+    <string name="Login_button">Login</string>
+    <string name="reset_button">Reset</string>
+    <string name="senseText">49er Sense</string>
+    <string name="user_name_ip">Enter User Name</string>
+    <string name="enter_password_ip">Enter Password</string>
 </resources>
