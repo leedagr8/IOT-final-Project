@@ -18,6 +18,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Declare TextView
+        SenseView = (TextView) findViewById(R.id.SenseView);
+
+        //Declare EditText
+        UserNameIP = (EditText) findViewById(R.id.UserNameIP);
+        PasswordIP = (EditText) findViewById(R.id.PasswordIP);
 
         //Declare Buttons
         LoginButton=(Button) findViewById(R.id.LoginButton);
@@ -25,9 +31,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Register= (Button) findViewById(R.id.Register);
         LogoutButton=(Button) findViewById(R.id.LogoutButton);
 
-        //Declare EditText
-        UserNameIP = (EditText) findViewById(R.id.UserNameIP);
-        PasswordIP = (EditText) findViewById(R.id.PasswordIP);
+        //Action Listeners
+
+
+
+
 
 
     }
