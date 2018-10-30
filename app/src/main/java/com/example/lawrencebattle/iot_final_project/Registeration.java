@@ -8,6 +8,6 @@ public class Registeration extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.registeration);
+        setContentView(R.layout.Registeration);
     }
 }

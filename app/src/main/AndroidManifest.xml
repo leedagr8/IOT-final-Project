@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Registeration" />
         <activity android:name=".NewUser" />
-        <activity android:name=".PowerUtility"></activity>
+        <activity android:name=".PowerUtility" />
+        <activity android:name=".ApplianceList"></activity>
     </application>
 
 </manifest>

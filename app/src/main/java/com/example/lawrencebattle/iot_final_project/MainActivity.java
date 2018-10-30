@@ -10,8 +10,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     public TextView SenseView;
-    public EditText UserNameIP,PasswordIP;
-    public Button LoginButton,ResetButton,Register,LogoutButton;
+    public EditText UserNameIP, PasswordIP;
+    public Button LoginButton, ResetButton, Register, LogoutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,16 +26,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         PasswordIP = (EditText) findViewById(R.id.PasswordIP);
 
         //Declare Buttons
-        LoginButton=(Button) findViewById(R.id.LoginButton);
-        ResetButton=(Button) findViewById(R.id.ResetButton);
-        Register= (Button) findViewById(R.id.Register);
-        LogoutButton=(Button) findViewById(R.id.LogoutButton);
+        LoginButton = (Button) findViewById(R.id.LoginButton);
+        ResetButton = (Button) findViewById(R.id.ResetButton);
+        Register = (Button) findViewById(R.id.Register);
+        LogoutButton = (Button) findViewById(R.id.LogoutButton);
 
         //Action Listeners
-
-
-
-
 
 
     }

@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class PowerUtility extends Activity{
+public class PowerUtility extends Activity {
 
     private Bundle bundle;
 
@@ -28,7 +28,7 @@ public class PowerUtility extends Activity{
                 // TODO Auto-generated method stub
 
                 bundle = getIntent().getExtras();
-                Intent communityActivity = new Intent(getBaseContext(),CommunityHomeActivity.class);
+                Intent communityActivity = new Intent(getBaseContext(), CommunityHomeActivity.class);
                 communityActivity.putExtras(bundle);
                 startActivity(communityActivity);
             }
@@ -50,7 +50,7 @@ public class PowerUtility extends Activity{
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 bundle = getIntent().getExtras();
-                Intent accountActivity = new Intent(getBaseContext(),ManageAccountActivity.class);
+                Intent accountActivity = new Intent(getBaseContext(), ManageAccountActivity.class);
                 accountActivity.putExtras(bundle);
                 startActivity(accountActivity);
             }
