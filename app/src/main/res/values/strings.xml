@@ -19,4 +19,7 @@
     <string name="home_user">Home User</string>
     <string name="enter_first_middle_last_name">Enter First Middle Last Name</string>
     <string name="enter_user_name">Enter User Name</string>
+    <string name="log_out">Log Out</string>
+    <string name="view_appliances">View Appliances</string>
+    <string name="manage_account">Manage Account</string>
 </resources>
