@@ -10,23 +10,63 @@
         android:id="@+id/view_generator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View Generators"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="72dp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/view_generators"
+        app:layout_constraintBottom_toTopOf="@+id/manage_generator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/market"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Market"
-        tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="210dp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/market"
+        app:layout_constraintBottom_toTopOf="@+id/logout_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manage_generator" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Log Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/market" />
 
     <Button
         android:id="@+id/manage_generator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Manage Generators"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="139dp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/manage_generators"
+        app:layout_constraintBottom_toTopOf="@+id/market"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_generator" />
 </android.support.constraint.ConstraintLayout>

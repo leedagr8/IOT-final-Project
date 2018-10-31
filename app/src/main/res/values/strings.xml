@@ -23,4 +23,7 @@
     <string name="view_appliances">View Appliances</string>
     <string name="manage_account">Manage Account</string>
     <string name="view_home_activity">View Home Activity</string>
+    <string name="view_generators">View Generators</string>
+    <string name="market">Market</string>
+    <string name="manage_generators">Manage Generators</string>
 </resources>

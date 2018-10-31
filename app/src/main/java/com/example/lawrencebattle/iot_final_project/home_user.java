@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class home_user extends Activity {
 
-    private Bundle bundle;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -21,40 +21,5 @@ public class home_user extends Activity {
         final Button ManageAcctButton = (Button) findViewById(R.id.ManageAcctButton);
         final Button LogoutButton = (Button) findViewById(R.id.LogoutButton);
 
-        ApplianceButton.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-
-                bundle = getIntent().getExtras();
-                Intent communityActivity = new Intent(getBaseContext(), CommunityHomeActivity.class);
-                communityActivity.putExtras(bundle);
-                startActivity(communityActivity);
-            }
-        });
-
-
-        LogoutButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                finish();
-            }
-        });
-
-        ManageAcctButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                bundle = getIntent().getExtras();
-                Intent accountActivity = new Intent(getBaseContext(), ManageAccountActivity.class);
-                accountActivity.putExtras(bundle);
-                startActivity(accountActivity);
-            }
-        });
-
-    }
 }
