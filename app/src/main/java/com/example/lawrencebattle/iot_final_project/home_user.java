@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class PowerUtility extends Activity {
+public class home_user extends Activity {
 
     private Bundle bundle;
 
