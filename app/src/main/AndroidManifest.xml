@@ -19,7 +19,9 @@
         <activity android:name=".Registeration" />
         <activity android:name=".NewUser" />
         <activity android:name=".PowerUtility" />
-        <activity android:name=".ApplianceList"></activity>
+        <activity android:name=".ApplianceList" />
+        <activity android:name=".power_utility" />
+        <activity android:name=".utility"></activity>
     </application>
 
 </manifest>
