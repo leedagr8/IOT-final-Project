@@ -1,5 +1,6 @@
 package com.example.lawrencebattle.iot_final_project;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -32,7 +33,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         LogoutButton = (Button) findViewById(R.id.LogoutButton);
 
         //Action Listeners
+        LoginButton.setOnClickListener(MainActivity.this);
+        ResetButton.setOnClickListener(MainActivity.this);
+        Register.setOnClickListener(MainActivity.this);
+        LogoutButton.setOnClickListener(MainActivity.this);
 
 
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+
+            case R.id.LoginButton:
+
+                break;
+
+            case R.id.ResetButton:
+
+                break;
+
+
+            case R.id.Register:
+                Intent intent = new Intent(MainActivity.this, NewUser.class);
+                startActivity(intent);
+                break;
+
+            case R.id.LogoutButton:
+
+                break;
+        }
     }
 }

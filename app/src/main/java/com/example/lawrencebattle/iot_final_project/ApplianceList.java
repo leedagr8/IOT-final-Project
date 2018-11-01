@@ -56,6 +56,5 @@ public class ApplianceList extends AppCompatActivity {
     public void setApplianceId(int applianceId) {
         this.applianceId = applianceId;
     }
-}
 
 }

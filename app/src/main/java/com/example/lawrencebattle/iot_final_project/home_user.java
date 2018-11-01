@@ -9,17 +9,15 @@ import android.widget.Button;
 public class home_user extends Activity {
 
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
 
-        setContentView(R.layout.user_home);
+        setContentView(R.layout.home_user);
 
         final Button ApplianceButton = (Button) findViewById(R.id.ApplianceButton);
         final Button ManageAcctButton = (Button) findViewById(R.id.ManageAcctButton);
         final Button LogoutButton = (Button) findViewById(R.id.LogoutButton);
-
-
+    }
 }

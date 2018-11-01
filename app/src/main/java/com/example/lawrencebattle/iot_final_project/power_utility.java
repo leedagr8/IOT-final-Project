@@ -2,6 +2,7 @@ package com.example.lawrencebattle.iot_final_project;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 
@@ -24,6 +25,11 @@ public class power_utility extends AppCompatActivity implements View.OnClickList
 
         //Action Listeners
 
+
+    }
+
+    @Override
+    public void onClick(View v) {
 
     }
 }
