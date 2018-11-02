@@ -16,6 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Registeration" />
         <activity android:name=".NewUser" />
         <activity android:name=".PowerUtility" />
         <activity android:name=".ApplianceList" />

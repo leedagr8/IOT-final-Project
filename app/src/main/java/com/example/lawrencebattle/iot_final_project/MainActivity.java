@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public TextView SenseView;
     public EditText UserNameIP, PasswordIP;
-    public Button LoginButton, ResetButton, Register, LogoutButton;
+    public Button LoginButton, ResetButton, Register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,13 +30,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         LoginButton = (Button) findViewById(R.id.LoginButton);
         ResetButton = (Button) findViewById(R.id.ResetButton);
         Register = (Button) findViewById(R.id.Register);
-        LogoutButton = (Button) findViewById(R.id.LogoutButton);
+
 
         //Action Listeners
         LoginButton.setOnClickListener(MainActivity.this);
         ResetButton.setOnClickListener(MainActivity.this);
         Register.setOnClickListener(MainActivity.this);
-        LogoutButton.setOnClickListener(MainActivity.this);
 
 
 
@@ -47,11 +46,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
 
             case R.id.LoginButton:
+              //  Intent intent = new Intent(MainActivity.this, NewUser.class);
+               // startActivity(intent);
+               // break;
 
-                break;
 
             case R.id.ResetButton:
 
+            {
+                UserNameIP.setText("");
+                PasswordIP.setText("");
+            }
                 break;
 
 
@@ -60,9 +65,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
 
-            case R.id.LogoutButton:
-
-                break;
         }
     }
 }

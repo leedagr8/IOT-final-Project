@@ -161,7 +161,7 @@
         app:layout_constraintTop_toBottomOf="@+id/PhoneNumber" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/UtilityCompany"
         android:layout_width="108dp"
         android:layout_height="35dp"
         android:layout_marginStart="12dp"
@@ -223,6 +223,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toEndOf="@+id/NewRegister"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@+id/UtilityCompany"
         app:layout_constraintVertical_bias="0.0" />
 </android.support.constraint.ConstraintLayout>
