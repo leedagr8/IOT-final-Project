@@ -60,7 +60,7 @@ public class NewUser extends AppCompatActivity {
                 // break;
 
 
-            case R.id.Register:
+          /*  case R.id.Register:
 
             {
 
@@ -68,7 +68,7 @@ public class NewUser extends AppCompatActivity {
             break;
 
 
-         /*   case R.id.Consumer:
+           case R.id.Consumer:
                 Intent intent = new Intent(NewUser.this, NewUser.class);
                 startActivity(intent);
                 break;

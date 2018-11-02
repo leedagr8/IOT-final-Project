@@ -17,9 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".NewUser" />
-        <activity android:name=".PowerUtility" />
-        <activity android:name=".ApplianceList" />
         <activity android:name=".power_utility" />
+        <activity android:name=".ApplianceList" />
         <activity android:name=".utility"></activity>
     </application>
 
