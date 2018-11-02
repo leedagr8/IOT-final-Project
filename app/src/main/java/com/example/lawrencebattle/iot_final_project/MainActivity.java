@@ -48,21 +48,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.LoginButton:
               //  Intent intent = new Intent(MainActivity.this, NewUser.class);
                // startActivity(intent);
-               // break;
+               break;
 
 
             case R.id.ResetButton:
-
-            {
                 UserNameIP.setText("");
                 PasswordIP.setText("");
-            }
+
                 break;
 
 
             case R.id.Register:
-                Intent intent = new Intent(MainActivity.this, NewUser.class);
-                startActivity(intent);
+                Intent RegisterIntent = new Intent(MainActivity.this, NewUser.class);
+                startActivity(RegisterIntent);
                 break;
 
         }
