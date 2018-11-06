@@ -1,0 +1,6 @@
+PHP
+server side language, used to make your website more dynamic and is used to retrieve as well as
+store data into your database. It's the connection between your website and database.
+
+Include volley j inside of Android studio, this way we can send network request to the application and
+PHP script. Makes it easier.
