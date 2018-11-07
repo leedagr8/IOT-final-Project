@@ -20,6 +20,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -27,13 +28,20 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class NewUser extends AppCompatActivity implements View.OnClickListener  {
+
+
+
+
+public class NewUser extends AppCompatActivity implements View.OnClickListener {
 
     public TextView RegisterPage;
-    public EditText FullName, NewUser,NewPassword,ConfirmPassword,Email,PhoneNumber;
+    public EditText FullName, NewUser, NewPassword, ConfirmPassword, Email, PhoneNumber;
     public Button NewRegister, Back, Register;
+
     public CheckBox Consumer,PowerUtility,UtilityCompany;
     public ProgressDialog dialog; // Used for my dialog to user on registration
+
+  
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,10 +71,8 @@ public class NewUser extends AppCompatActivity implements View.OnClickListener  
         UtilityCompany = (CheckBox) findViewById(R.id.UtilityCompany);
 
 
-
         //Action Listeners
         NewRegister.setOnClickListener((View.OnClickListener) NewUser.this);
-        //Register.setOnClickListener((View.OnClickListener) NewUser.this);
         Back.setOnClickListener((View.OnClickListener) NewUser.this);
         Consumer.setOnClickListener((View.OnClickListener) NewUser.this);
         PowerUtility.setOnClickListener((View.OnClickListener) NewUser.this);
@@ -157,13 +163,25 @@ public class NewUser extends AppCompatActivity implements View.OnClickListener  
                 registerUser();
                 Intent newRegisterIntent = new Intent(NewUser.this, NewUser.class);
                 startActivity(newRegisterIntent);
-                 break;
+                break;
 
 
             case R.id.Back:
                 Intent intent = new Intent(NewUser.this, MainActivity.class);
                 startActivity(intent);
                 break;
+
+            Consumer.performClick();
+            if (Consumer.isChecked()) {
+
+            } else if (PowerUtility.isChecked()) {
+
+            } else if (UtilityCompany.isChecked())
+
+
+                ;
+
+
         }
     }
 }
