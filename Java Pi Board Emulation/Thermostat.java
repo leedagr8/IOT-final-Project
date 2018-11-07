@@ -1,19 +1,20 @@
 /* this class mimics the thermostats of the house
  * two string objects: mode and fan
- * two double objects: currentTemp and controlTemp
+ * two int objects: currentTemp and controlTemp
  * mode has three options: heat, cool, and off
  * fan has two options:	   auto and off
  * currentTemp is the actual temp
  * controlTemp is the desired temp
  * the code sets and returns these two objects
  * make two separate objects for upstairs and downstairs
+ * temp is an int because fahrenheit is used and is accurate enough
  */
 
 package main;
 
 public class Thermostat {
 	private String mode, fan;
-	private double currentTemp, controlTemp;
+	private int currentTemp, controlTemp;
 	
 	public void setMode(String mode) {
 		this.mode = mode;
@@ -23,11 +24,11 @@ public class Thermostat {
 		this.fan = fan;
 	}
 	
-	public void setCurrentTemp(double temp) {
+	public void setCurrentTemp(int temp) {
 		this.currentTemp = temp;
 	}
 	
-	public void setControlTemp(double temp) {
+	public void setControlTemp(int temp) {
 		this.controlTemp = temp;
 	}
 		
@@ -39,11 +40,11 @@ public class Thermostat {
 		return fan;		
 	}
 	
-	public double getCurrentTemp() {
+	public int getCurrentTemp() {
 		return currentTemp;
 	}
 	
-	public double getControlTemp() {
+	public int getControlTemp() {
 		return controlTemp;
 	}
 }
