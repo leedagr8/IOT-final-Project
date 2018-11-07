@@ -1,0 +1,19 @@
+PHP
+server side language, used to make your website more dynamic and is used to retrieve as well as
+store data into your database. It's the connection between your website and database.
+
+---------------------------------------------------------------------------------------------
+Include volley j inside of Android studio, this way we can send network request to the application and
+PHP script. Makes it easier.
+
+This was placed in my build.gradle script.
+
+------------------------------NOTES FROM ANDROID STUDIO--------------------------------
+Learned that Toast.makeText..... Length_Long() -- is 3.5s (duration of how long message will display)
+Length_SHORT = 2 s
+
+Progress Dialog allows me to display a progress indicator (and message if I want).
+
+In manifests I included     <uses-permission android:name="android.permission.INTERNET" /> to add 
+internet permission
+
