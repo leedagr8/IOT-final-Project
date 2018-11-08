@@ -8,9 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 
 
-public class ManageAccount extends AppCompatActivity implements View.OnClickListener{
+public class ManageAccount_User extends AppCompatActivity implements View.OnClickListener{
 
-    public Button GoBack;
+    public Button GoBack,Update;
     public EditText UpdatePassword,updatePasswordConfirm,PhoneNumber,UpdateEmail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class ManageAccount extends AppCompatActivity implements View.OnClickList
 
         //Button
         GoBack = (Button) findViewById(R.id.BackButton);
-
+        Update = (Button) findViewById(R.id.Update);
         //Edit Texts
         UpdatePassword = (EditText) findViewById(R.id.UpdatePassword);
         updatePasswordConfirm = (EditText) findViewById(R.id.updatePasswordConfirm);
@@ -30,7 +30,7 @@ public class ManageAccount extends AppCompatActivity implements View.OnClickList
 
     }
 
-    //Not sure if there should be an @Override here
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -44,7 +44,11 @@ public class ManageAccount extends AppCompatActivity implements View.OnClickList
                 startActivity(intentback);
                 break;
 
-
+            //Saves Updated Information and keeps User On this Page
+            case R.id.Update:
+                Intent intentupdate = new Intent(this, ManageAccount_User.class);
+                startActivity(intentupdate);
+                break;
 
 
         }

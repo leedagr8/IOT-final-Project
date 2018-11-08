@@ -20,12 +20,17 @@
         </activity>
         <activity android:name=".NewUser" />
         <activity android:name=".power_utility" />
-        <activity android:name=".ApplianceList" />
         <activity android:name=".utility" />
         <activity android:name=".ViewGenerators" />
         <activity android:name=".ManageGenerators" />
         <activity android:name=".Market" />
-        <activity android:name=".ManageAccount"></activity>
+        <activity android:name=".ManageAccount" />
+        <activity android:name=".HomeActivityClass" />
+        <activity android:name=".Appliance_List" />
+        <activity android:name=".view_home_Utility" />
+        <activity android:name=".manage_home_Utility" />
+        <activity android:name=".generator_view_Utility" />
+        <activity android:name=".market_buttom_Utility"></activity>
     </application>
 
 </manifest>

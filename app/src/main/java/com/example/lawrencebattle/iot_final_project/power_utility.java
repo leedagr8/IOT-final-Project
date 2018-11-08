@@ -39,19 +39,19 @@ public class power_utility extends AppCompatActivity implements View.OnClickList
 
             //Sends PowerUtility user to View_Generators
             case R.id.view_generator:
-                Intent intentviewgens= new Intent(this, ViewGenerators.class);
+                Intent intentviewgens= new Intent(this, ViewGenerators_Power_Utility.class);
                 startActivity(intentviewgens);
                 break;
 
             //Sends PowerUtility user to Manage_Generators
             case R.id.manage_generator:
-            Intent intentmanagegens = new Intent(this, ManageGenerators.class);
+            Intent intentmanagegens = new Intent(this, ManageGenerators_Power_Utility.class);
             startActivity(intentmanagegens);
             break;
 
             //Sends PowerUtility user to Market
             case R.id.market:
-                Intent intentmarket = new Intent(this, Market.class);
+                Intent intentmarket = new Intent(this, Market_Power_Utility.class);
                 startActivity(intentmarket);
                 break;
 

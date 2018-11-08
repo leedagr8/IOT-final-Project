@@ -8,16 +8,17 @@ import android.webkit.WebView;
 import android.widget.Button;
 
 
-public class ManageGenerators extends AppCompatActivity implements View.OnClickListener{
+public class Appliance_List_User extends AppCompatActivity implements View.OnClickListener{
 
-    public Button GoBack;
+    public Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         //Button
-        GoBack = (Button) findViewById(R.id.BackButton);
+        back = (Button) findViewById(R.id.back);
+
 
 
 
@@ -25,7 +26,7 @@ public class ManageGenerators extends AppCompatActivity implements View.OnClickL
 
     }
 
-    //Not sure if there should be an @Override here
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -33,10 +34,12 @@ public class ManageGenerators extends AppCompatActivity implements View.OnClickL
 
             //Action Listeners
 
-            //Sends PowerUtility user to power_utility
-            case R.id.GoBack:
-                Intent intentback = new Intent(this, power_utility.class);
-                startActivity(intentback);
+
+
+            //Sends home_user user to home_user
+            case R.id.back:
+                Intent intentgoback = new Intent(this, home_user.class);
+                startActivity(intentgoback);
                 break;
 
 

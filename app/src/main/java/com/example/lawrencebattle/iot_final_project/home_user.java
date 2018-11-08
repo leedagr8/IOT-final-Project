@@ -36,21 +36,21 @@ public class home_user extends AppCompatActivity implements View.OnClickListener
 
             //Action Listeners
 
-/*            //Sends home_user user to ViewHomeActivity
+            //Sends home_user user to ViewHomeActivity
             case R.id.HomeActivity:
-                Intent intenthomeact = new Intent(this, HomeActivityClass.class);
-                startActivity(intenthomeact;
-                break;*/
+                Intent intenthomeact = new Intent(this, HomeActivityClass_User.class);
+                startActivity(intenthomeact);
+                break;
 
             //Sends home_user user to ViewAppliances
             case R.id.ApplianceButton:
-                Intent intentappliance = new Intent(this, ApplianceList.class);
+                Intent intentappliance = new Intent(this, Appliance_List_User.class);
                 startActivity(intentappliance);
                 break;
 
             //Sends home_user user to ManageAccount
             case R.id.ManageAcctButton:
-                Intent intentmanage = new Intent(this, ManageAccount.class);
+                Intent intentmanage = new Intent(this, ManageAccount_User.class);
                 startActivity(intentmanage);
                 break;
 

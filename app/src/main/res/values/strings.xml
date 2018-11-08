@@ -12,7 +12,6 @@
     <string name="power_generators">Power Generators</string>
     <string name="go_back">Go Back</string>
     <string name="register">Register</string>
-    <string name="confirm_password">Confirm Password</string>
     <string name="enter_email_address">Enter Email Address</string>
     <string name="utility_company">Utility Company</string>
     <string name="home_user">Home User</string>
@@ -42,5 +41,7 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="update_phone">Update Phone #</string>
     <string name="update_email_address">Update Email Address</string>
+    <string name="HomeActivity">TextView</string>
+    <string name="update">Update</string>
 
 </resources>
