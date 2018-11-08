@@ -20,7 +20,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -28,20 +27,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-
-
-
-
-public class NewUser extends AppCompatActivity implements View.OnClickListener {
+public class NewUser extends AppCompatActivity implements View.OnClickListener  {
 
     public TextView RegisterPage;
-    public EditText FullName, NewUser, NewPassword, ConfirmPassword, Email, PhoneNumber;
+    public EditText FullName, NewUser,NewPassword,ConfirmPassword,Email,PhoneNumber;
     public Button NewRegister, Back, Register;
-
     public CheckBox Consumer,PowerUtility,UtilityCompany;
     public ProgressDialog dialog; // Used for my dialog to user on registration
-
-  
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,8 +63,10 @@ public class NewUser extends AppCompatActivity implements View.OnClickListener {
         UtilityCompany = (CheckBox) findViewById(R.id.UtilityCompany);
 
 
+
         //Action Listeners
         NewRegister.setOnClickListener((View.OnClickListener) NewUser.this);
+        //Register.setOnClickListener((View.OnClickListener) NewUser.this);
         Back.setOnClickListener((View.OnClickListener) NewUser.this);
         Consumer.setOnClickListener((View.OnClickListener) NewUser.this);
         PowerUtility.setOnClickListener((View.OnClickListener) NewUser.this);
@@ -81,26 +75,26 @@ public class NewUser extends AppCompatActivity implements View.OnClickListener {
 
     }
 
-        //Function to Register User into Database
+    //Function to Register User into Database
     private void registerUser(){
 
-            //Used trim to remove any whitespace.
+        //Used trim to remove any whitespace.
         final String email = Email.getText().toString().trim();
         final String password = NewPassword.getText().toString().trim();
         final String name = FullName.getText().toString().trim();
         final String username = NewUser.getText().toString().trim();
         final String phone = PhoneNumber.getText().toString().trim();
-      //  String confirmation = ConfirmPassword.getText().toString().trim();
-       //boolean confirmed = false; // make sure the passwords match
+        //  String confirmation = ConfirmPassword.getText().toString().trim();
+        //boolean confirmed = false; // make sure the passwords match
 
 
-       // while(!confirmation.equals(password)){
-          //  Toast.makeText(getApplicationContext(), "Password does not match.", Toast.LENGTH_SHORT).show();
+        // while(!confirmation.equals(password)){
+        //  Toast.makeText(getApplicationContext(), "Password does not match.", Toast.LENGTH_SHORT).show();
 
-      //}
+        //}
 
 
-            //Since this is a network request and will take time to register. I will display a Progess message to user.
+        //Since this is a network request and will take time to register. I will display a Progess message to user.
 
         dialog.setMessage("Registering user....");
         dialog.show();
@@ -115,9 +109,9 @@ public class NewUser extends AppCompatActivity implements View.OnClickListener {
                     @Override
                     public void onResponse(String response) {
                         //Will hide progress message if successful
-                            dialog.dismiss();
+                        dialog.dismiss();
 
-                            //Pass JSON inside this method on response
+                        //Pass JSON inside this method on response
 
                         try {
                             JSONObject jsonObject = new JSONObject(response); // passing in JSON Object
@@ -170,18 +164,6 @@ public class NewUser extends AppCompatActivity implements View.OnClickListener {
                 Intent intent = new Intent(NewUser.this, MainActivity.class);
                 startActivity(intent);
                 break;
-
-            Consumer.performClick();
-            if (Consumer.isChecked()) {
-
-            } else if (PowerUtility.isChecked()) {
-
-            } else if (UtilityCompany.isChecked())
-
-
-                ;
-
-
         }
     }
 }
