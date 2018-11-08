@@ -7,7 +7,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
 
-public class ViewGenerators extends AppCompatActivity {
+public class ViewGenerators extends AppCompatActivity implements View.OnClickListener {
 
     public Button BackButton;
 
@@ -32,7 +32,7 @@ public class ViewGenerators extends AppCompatActivity {
     }
 
   //Not sure if there should be an @Override here
-    //@Override
+   @Override
     public void onClick(View v) {
         switch (v.getId()) {
 

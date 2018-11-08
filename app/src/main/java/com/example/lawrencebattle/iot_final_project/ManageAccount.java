@@ -4,14 +4,14 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.EditText;
 
 
-public class ManageGenerators extends AppCompatActivity implements View.OnClickListener{
+public class ManageAccount extends AppCompatActivity implements View.OnClickListener{
 
     public Button GoBack;
-
+    public EditText UpdatePassword,updatePasswordConfirm,PhoneNumber,UpdateEmail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +19,11 @@ public class ManageGenerators extends AppCompatActivity implements View.OnClickL
         //Button
         GoBack = (Button) findViewById(R.id.BackButton);
 
+        //Edit Texts
+        UpdatePassword = (EditText) findViewById(R.id.UpdatePassword);
+        updatePasswordConfirm = (EditText) findViewById(R.id.updatePasswordConfirm);
+        PhoneNumber = (EditText) findViewById(R.id.PhoneNumber);
+        UpdateEmail = (EditText) findViewById(R.id.UpdateEmail);
 
 
 
@@ -33,11 +38,12 @@ public class ManageGenerators extends AppCompatActivity implements View.OnClickL
 
             //Action Listeners
 
-            //Sends PowerUtility user to power_utility
+            //Sends Homeuser user to home_user
             case R.id.GoBack:
-                Intent intentback = new Intent(this, power_utility.class);
+                Intent intentback = new Intent(this, home_user.class);
                 startActivity(intentback);
                 break;
+
 
 
 

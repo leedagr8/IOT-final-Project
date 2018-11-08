@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.content.Intent;
 
 
+
 public class power_utility extends AppCompatActivity implements View.OnClickListener {
 
 
@@ -29,7 +30,7 @@ public class power_utility extends AppCompatActivity implements View.OnClickList
 
     }
 
-   // @Override
+   @Override
     public void onClick(View v) {
         switch (v.getId()) {
 

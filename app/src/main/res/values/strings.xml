@@ -34,5 +34,13 @@
     <string name="officeswitch">officeswitch</string>
     <string name="masterswitch">masterswitch</string>
     <string name="log_out">log out</string>
+    <string name="CurrentMarket">TextView</string>
+    <string name="GoBackButton">Button</string>
+    <string name="ManageGenerators">ManageGenerators</string>
+    <string name="update_password">Update Password</string>
+    <string name="ManageAccount">TextView</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="update_phone">Update Phone #</string>
+    <string name="update_email_address">Update Email Address</string>
 
 </resources>

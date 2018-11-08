@@ -6,17 +6,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.TextView;
 
-public class Market extends AppCompatActivity {
+public class Market extends AppCompatActivity implements View.OnClickListener{
 
-    public Button BackButton;
+    public Button GoBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         //Button
-        BackButton = (Button) findViewById(R.id.BackButton);
+        GoBack = (Button) findViewById(R.id.BackButton);
 
 
         //Sends User to a specific website
@@ -24,23 +25,23 @@ public class Market extends AppCompatActivity {
 
         String url = "https://www.seia.org/solar-industry-research-data";
 
-       // WebView gens=(WebView) findViewById(R.id.market_site);
+        WebView gens=(WebView) findViewById(R.id.market_site);
 
-       // gens.loadUrl(url);
+        gens.loadUrl(url);
 
 
     }
 
-    //Not sure if there should be an @Override here
-    //@Override
+
+    @Override
     public void onClick(View v) {
         switch (v.getId()) {
 
 
             //Action Listeners
 
-            //Sends PowerUtility user to MainActivity
-            case R.id.BackButton:
+            //Sends PowerUtility user to power_utility
+            case R.id.GoBack:
                 Intent intentback = new Intent(this, power_utility.class);
                 startActivity(intentback);
                 break;
