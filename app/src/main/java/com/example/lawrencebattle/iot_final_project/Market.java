@@ -24,9 +24,9 @@ public class Market extends AppCompatActivity {
 
         String url = "https://www.seia.org/solar-industry-research-data";
 
-        WebView gens=(WebView) findViewById(R.id.market_site);
+       // WebView gens=(WebView) findViewById(R.id.market_site);
 
-        gens.loadUrl(url);
+       // gens.loadUrl(url);
 
 
     }
