@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,7 +22,10 @@
         <activity android:name=".NewUser" />
         <activity android:name=".power_utility" />
         <activity android:name=".ApplianceList" />
-        <activity android:name=".utility"></activity>
+        <activity android:name=".utility" />
+        <activity android:name=".ViewGenerators" />
+        <activity android:name=".ManageGenerators" />
+        <activity android:name=".Market"></activity>
     </application>
 
 </manifest>
