@@ -23,7 +23,9 @@
         <activity android:name=".ApplianceList" />
         <activity android:name=".utility" />
         <activity android:name=".Switch" />
-        <activity android:name=".HomeLogin"></activity>
+        <activity android:name=".HomeLogin" />
+        <activity android:name=".power_login" />
+        <activity android:name=".util_login"></activity>
     </application>
 
 </manifest>
