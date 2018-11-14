@@ -21,7 +21,9 @@
         <activity android:name=".NewUser" />
         <activity android:name=".power_utility" />
         <activity android:name=".ApplianceList" />
-        <activity android:name=".utility"></activity>
+        <activity android:name=".utility" />
+        <activity android:name=".Switch" />
+        <activity android:name=".HomeLogin"></activity>
     </application>
 
 </manifest>
