@@ -4,7 +4,7 @@
 	
 	//echo'balah';
 
-	class DbOperations{
+	class DbOperations_Util{
 
 		private $con;
 
@@ -25,7 +25,7 @@
 			$password = md5($pass); //encryptes your password to hash5 :)
 			//$password = $pass;
 			//Prepares a query for you.
-			$stmt = $this->con->prepare("INSERT INTO `users` (`id`, `username`, `password`, `name`, `email`, `phone`) VALUES (NULL,?,?,?,?,?);"); 
+			$stmt = $this->con->prepare("INSERT INTO `users_Util` (`id`, `username`, `password`, `name`, `email`, `phone`) VALUES (NULL,?,?,?,?,?);"); 
 
 			//bind parameters to your query
 
@@ -44,7 +44,7 @@
 	 public function userLogin($username, $pass){
 		
 		$password = md5($pass);
-		$stmt = $this->con->prepare("SELECT id FROM users WHERE username = ? AND password = ?			");
+		$stmt = $this->con->prepare("SELECT id FROM users_Util WHERE username = ? AND password = ?			");
 		$stmt->bind_param("ss",$username,$password);
 		$stmt->execute();
 		$stmt->store_result();
@@ -52,7 +52,7 @@
 	}
 
 	 public function getUserByUsername($username){
-		$stmt = $this->con->prepare("SELECT * FROM users WHERE username = ?");
+		$stmt = $this->con->prepare("SELECT * FROM users_Util WHERE username = ?");
 		$stmt->bind_param("s",$username);
 		$stmt->execute();
 		return $stmt->get_result()->fetch_assoc();
