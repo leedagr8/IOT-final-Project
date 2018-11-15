@@ -1,4 +1,5 @@
-package com.example.lawrencebattle.iot_final_project;
+
+        package com.example.lawrencebattle.iot_final_project;
 
 import android.app.ProgressDialog;
 import android.content.Intent;

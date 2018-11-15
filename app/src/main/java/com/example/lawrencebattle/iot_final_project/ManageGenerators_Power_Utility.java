@@ -21,6 +21,18 @@ public class ManageGenerators_Power_Utility extends AppCompatActivity implements
 
 
 
+        //Button
+        GoBack = (Button) findViewById(R.id.BackButton);
+
+
+        //Sends User to a specific website
+        setContentView(R.layout.activity_view__generators);
+
+        String url = "https://services.swpc.noaa.gov/images/geospace-1-day.png";
+
+        WebView gens=(WebView) findViewById(R.id.generator_site);
+
+        gens.loadUrl(url);
 
 
     }
