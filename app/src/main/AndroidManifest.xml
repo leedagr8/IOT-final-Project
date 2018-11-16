@@ -31,6 +31,10 @@
         <activity android:name=".generator_view_Utility" />
         <activity android:name=".market_buttom_Utility" />
         <activity android:name=".view_home_Utility"></activity>
+        <activity android:name=".Switch" />
+        <activity android:name=".HomeLogin" />
+        <activity android:name=".power_login" />
+        <activity android:name=".util_login"></activity>
     </application>
 
 </manifest>

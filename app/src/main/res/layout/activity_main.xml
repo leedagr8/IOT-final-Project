@@ -7,103 +7,56 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/senseView"
+        android:layout_width="244dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/SenseView"
-        android:layout_width="128dp"
-        android:layout_height="40dp"
+        android:layout_width="203dp"
+        android:layout_height="95dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="35dp"
         android:gravity="center"
         android:text="@string/senseText"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/UserNameIP"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        app:fontFamily="serif"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/UserNameIP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="35dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/user_name_ip"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/PasswordIP"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SenseView" />
-
-    <EditText
-        android:id="@+id/PasswordIP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/enter_password_ip"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UserNameIP" />
-
     <Button
-        android:id="@+id/LoginButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
-        android:layout_marginBottom="165dp"
-        android:text="@string/Login_button"
-        app:layout_constraintEnd_toStartOf="@+id/ResetButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PasswordIP" />
-
-    <Button
-        android:id="@+id/ResetButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginRight="84dp"
-        android:layout_marginBottom="47dp"
-        android:text="@string/reset_button"
-        app:layout_constraintBottom_toTopOf="@+id/Register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PasswordIP"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/Register"
+        android:id="@+id/Continue"
         android:layout_width="226dp"
-        android:layout_height="39dp"
+        android:layout_height="50dp"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
-        android:layout_marginTop="46dp"
         android:layout_marginEnd="78dp"
         android:layout_marginRight="78dp"
-        android:text="@string/Register_Button"
+        android:text="Please continue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LoginButton" />
+        tools:layout_editor_absoluteY="397dp" />
 
 
 </android.support.constraint.ConstraintLayout>
