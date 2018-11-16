@@ -44,7 +44,7 @@ public class home_user extends AppCompatActivity implements View.OnClickListener
 
             //Sends home_user user to ViewAppliances
             case R.id.ApplianceButton:
-                Intent intentappliance = new Intent(this, Appliance_List_User.class);
+                Intent intentappliance = new Intent(this, appliance_List_User.class);
                 startActivity(intentappliance);
                 break;
 

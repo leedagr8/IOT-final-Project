@@ -27,10 +27,10 @@
         <activity android:name=".ManageAccount" />
         <activity android:name=".HomeActivityClass" />
         <activity android:name=".Appliance_List" />
-        <activity android:name=".view_home_Utility" />
         <activity android:name=".manage_home_Utility" />
         <activity android:name=".generator_view_Utility" />
-        <activity android:name=".market_buttom_Utility"></activity>
+        <activity android:name=".market_buttom_Utility" />
+        <activity android:name=".view_home_Utility"></activity>
     </application>
 
 </manifest>
