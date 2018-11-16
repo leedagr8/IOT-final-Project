@@ -5,7 +5,7 @@ public class Constants {
     //URL of local Host
     private static final String ROOT_URL = "http://172.17.0.1/";
 
-    //Register URL
+    //Register URLi
     public static String URL_REGISTER = ROOT_URL +"registerUser.php";
     public static String URL_REGISTER_POW = ROOT_URL +"registerUser_Pow.php";
     public static String URL_REGISTER_UTIL = ROOT_URL +"registerUser_Util.php";

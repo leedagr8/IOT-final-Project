@@ -1,23 +1,69 @@
 package com.example.lawrencebattle.iot_final_project;
 
-import android.app.Activity;
 import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 
-public class home_user extends Activity {
 
+public class home_user extends AppCompatActivity implements View.OnClickListener{
+
+    public Button LogoutButton,ManageAcctButton,ApplianceButton,HomeActivity;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //Button
+        LogoutButton = (Button) findViewById(R.id.LogoutButton);
+        ManageAcctButton = (Button) findViewById(R.id.ManageAcctButton);
+        ApplianceButton = (Button) findViewById(R.id.ApplianceButton);
+        HomeActivity = (Button) findViewById(R.id.HomeActivity);
 
-        setContentView(R.layout.home_user);
 
-        final Button ApplianceButton = (Button) findViewById(R.id.ApplianceButton);
-        final Button ManageAcctButton = (Button) findViewById(R.id.ManageAcctButton);
-        final Button LogoutButton = (Button) findViewById(R.id.LogoutButton);
+
+
+
+    }
+
+    //Not sure if there should be an @Override here
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+
+
+            //Action Listeners
+
+            //Sends home_user user to ViewHomeActivity
+            case R.id.HomeActivity:
+                Intent intenthomeact = new Intent(this, HomeActivityClass_User.class);
+                startActivity(intenthomeact);
+                break;
+
+            //Sends home_user user to ViewAppliances
+            case R.id.ApplianceButton:
+                Intent intentappliance = new Intent(this, appliance_List_User.class);
+                startActivity(intentappliance);
+                break;
+
+            //Sends home_user user to ManageAccount
+            case R.id.ManageAcctButton:
+                Intent intentmanage = new Intent(this, ManageAccount_User.class);
+                startActivity(intentmanage);
+                break;
+
+
+            //Sends home_user user to MainActivity
+            case R.id.LogoutButton:
+                Intent intentlogout = new Intent(this, MainActivity.class);
+                startActivity(intentlogout);
+                break;
+
+
+
+        }
+
     }
 }
