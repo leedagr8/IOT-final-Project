@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lawrencebattle.iot_final_project">
 
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -10,7 +11,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,16 +24,18 @@
         <activity android:name=".NewUser" />
         <activity android:name=".power_utility" />
         <activity android:name=".utility" />
-        <activity android:name=".ViewGenerators" />
-        <activity android:name=".ManageGenerators" />
-        <activity android:name=".Market" />
-        <activity android:name=".ManageAccount" />
-        <activity android:name=".HomeActivityClass" />
-        <activity android:name=".Appliance_List" />
+        <activity android:name=".generator_Utility" />
+        <activity android:name=".ManageGenerators_Power_Utility" />
+        <activity android:name=".market_Utility" />
+        <activity android:name=".Market_Power_Utility" />
+        <activity android:name=".ManageAccount_User" />
+        <activity android:name=".HomeActivityClass_User" />
+        <activity android:name=".appliance_List_User" />
         <activity android:name=".manage_home_Utility" />
-        <activity android:name=".generator_view_Utility" />
-        <activity android:name=".market_buttom_Utility" />
+        <activity android:name=".home_user" />
+        <activity android:name=".ViewGenerators_Power_Utility" />
         <activity android:name=".view_home_Utility"></activity>
+
     </application>
 
 </manifest>
