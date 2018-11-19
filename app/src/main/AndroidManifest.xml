@@ -35,7 +35,14 @@
         <activity android:name=".home_user" />
         <activity android:name=".ViewGenerators_Power_Utility" />
         <activity android:name=".view_home_Utility"></activity>
+<<<<<<< HEAD
 
+=======
+        <activity android:name=".Switch" />
+        <activity android:name=".HomeLogin" />
+        <activity android:name=".power_login" />
+        <activity android:name=".util_login"></activity>
+>>>>>>> 6dc9216412e36d10ea4f69b2f022947ead1b3da5
     </application>
 
 </manifest>

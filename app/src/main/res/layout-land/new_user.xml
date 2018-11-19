@@ -23,7 +23,7 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/NewUser"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RegisterPage" />
+        app:layout_constraintTop_toBottomOf="@+id/RegisterHome" />
 
     <EditText
         android:id="@+id/PhoneNumber"
@@ -110,10 +110,10 @@
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RegisterPage" />
+        app:layout_constraintTop_toBottomOf="@+id/RegisterHome" />
 
     <TextView
-        android:id="@+id/RegisterPage"
+        android:id="@+id/RegisterHome"
         android:layout_width="160dp"
         android:layout_height="36dp"
         android:layout_marginStart="8dp"

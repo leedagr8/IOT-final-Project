@@ -1,10 +1,9 @@
-
-        package com.example.lawrencebattle.iot_final_project;
+package com.example.lawrencebattle.iot_final_project;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -27,7 +26,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class NewUser extends AppCompatActivity implements View.OnClickListener  {
+public class NewPower extends AppCompatActivity implements View.OnClickListener  {
 
     public TextView RegisterPage;
     public EditText FullName, NewUser,NewPassword,ConfirmPassword,Email,PhoneNumber;
@@ -38,11 +37,11 @@ public class NewUser extends AppCompatActivity implements View.OnClickListener  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.new_user);
+        setContentView(R.layout.new_power);
 
         dialog = new ProgressDialog(this);
 
-        RegisterPage = (TextView) findViewById(R.id.RegisterHome);
+        RegisterPage = (TextView) findViewById(R.id.RegisterPower);
 
         //Declare EditText
         FullName = (EditText) findViewById(R.id.FullName);
@@ -65,12 +64,12 @@ public class NewUser extends AppCompatActivity implements View.OnClickListener  
 
 
         //Action Listeners
-        NewRegister.setOnClickListener((View.OnClickListener) NewUser.this);
+        NewRegister.setOnClickListener((View.OnClickListener) NewPower.this);
         //Register.setOnClickListener((View.OnClickListener) NewUser.this);
-        Back.setOnClickListener((View.OnClickListener) NewUser.this);
-        Consumer.setOnClickListener((View.OnClickListener) NewUser.this);
-        PowerUtility.setOnClickListener((View.OnClickListener) NewUser.this);
-        UtilityCompany.setOnClickListener((View.OnClickListener) NewUser.this);
+        Back.setOnClickListener((View.OnClickListener) NewPower.this);
+        Consumer.setOnClickListener((View.OnClickListener) NewPower.this);
+        PowerUtility.setOnClickListener((View.OnClickListener) NewPower.this);
+        UtilityCompany.setOnClickListener((View.OnClickListener) NewPower.this);
 
 
     }
@@ -104,7 +103,7 @@ public class NewUser extends AppCompatActivity implements View.OnClickListener  
 
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                Constants.URL_REGISTER,
+                Constants.URL_REGISTER_POW,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -156,13 +155,13 @@ public class NewUser extends AppCompatActivity implements View.OnClickListener  
 
             case R.id.NewRegister:
                 registerUser();
-                Intent newRegisterIntent = new Intent(NewUser.this, NewUser.class);
+                Intent newRegisterIntent = new Intent(NewPower.this, MainActivity.class);
                 startActivity(newRegisterIntent);
                 break;
 
 
             case R.id.Back:
-                Intent intent = new Intent(NewUser.this, MainActivity.class);
+                Intent intent = new Intent(NewPower.this, Switch.class);
                 startActivity(intent);
                 break;
         }
