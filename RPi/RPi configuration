@@ -1,0 +1,12 @@
+The RPi needs to be configured to act as a wireless access point. Certain bits of software need to be installed on the boards in order for this to work.
+Configuring the board to act as a WiFi access point is needed for intercommunication of board-board, board-server, and board-laptop
+Different was of doing this exist and multiple examples may be found online. Here are some examples:
+
+Wireless access point:
+https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/
+
+Wireless access point as a stand alone network:
+https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md
+
+Each board is configured with a static IP address so that it can be accessed within the IoT network.
+I have had some success with this technique, specifically the first method
