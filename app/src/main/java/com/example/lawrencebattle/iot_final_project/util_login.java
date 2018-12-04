@@ -1,10 +1,12 @@
 package com.example.lawrencebattle.iot_final_project;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,7 +28,7 @@ import java.util.Map;
 
 public class util_login extends AppCompatActivity implements View.OnClickListener {
     public TextView SenseView;
-    public Text password2, username2;
+    public EditText password2, username2;
     public Button login2;
     private ProgressDialog progressDialog;
 
@@ -46,7 +48,8 @@ public class util_login extends AppCompatActivity implements View.OnClickListene
         //Declare Buttons
         login2 = (Button) findViewById(R.id.login2);
 
-
+        password2 = findViewById(R.id.password2);
+        username2 = findViewById(R.id.username2);
 
         //Action Listeners
         login2.setOnClickListener(util_login.this);
@@ -116,8 +119,8 @@ public class util_login extends AppCompatActivity implements View.OnClickListene
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> params = new HashMap<>();
-                params.put("username", Username);
-                params.put("password", Password);
+                params.put("username", username2.getText().toString());
+                params.put("password", password2.getText().toString());
                 return params;
             }
         };

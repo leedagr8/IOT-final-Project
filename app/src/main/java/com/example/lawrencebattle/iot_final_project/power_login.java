@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,7 +25,7 @@ import java.util.Map;
 
 public class power_login extends AppCompatActivity implements View.OnClickListener {
     public TextView SenseView;
-    public Text password3, username3;
+    public EditText password3, username3;
     public Button login3;
     private ProgressDialog progressDialog;
 
@@ -44,6 +45,8 @@ public class power_login extends AppCompatActivity implements View.OnClickListen
         //Declare Buttons
         login3 = (Button) findViewById(R.id.login3);
 
+        username3 = findViewById(R.id.username3);
+        password3 = findViewById(R.id.password3);
 
 
         //Action Listeners
@@ -114,8 +117,8 @@ public class power_login extends AppCompatActivity implements View.OnClickListen
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> params = new HashMap<>();
-                params.put("username", username3);
-                params.put("password", password3);
+                params.put("username", username3.getText().toString());
+                params.put("password", password3.getText().toString());
                 return params;
             }
         };
@@ -131,7 +134,7 @@ public class power_login extends AppCompatActivity implements View.OnClickListen
             case R.id.login3:
 
              // NEED TO CREATE a power_user class
-             //   Intent intent = new Intent(getApplicationContext(), power_user.class);
+               // Intent intent = new Intent(getApplicationContext(), power_user.class);
                 startActivity(intent);
                 break;
 

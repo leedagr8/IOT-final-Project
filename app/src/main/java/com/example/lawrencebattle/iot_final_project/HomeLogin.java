@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,7 +29,7 @@ import java.util.Map;
 
 public class HomeLogin extends AppCompatActivity implements View.OnClickListener {
 public TextView SenseView;
-public Text Password, Username;
+public EditText Password, Username;
 public Button Login;
 private ProgressDialog progressDialog;
 
@@ -47,6 +48,10 @@ protected void onCreate(Bundle savedInstanceState) {
 
         //Declare Buttons
         Login = (Button) findViewById(R.id.Login);
+
+
+        Username = findViewById(R.id.Username);
+        Password = findViewById(R.id.Password);
 
 
 
@@ -118,8 +123,8 @@ public void onErrorResponse(VolleyError error) {
 @Override
 protected Map<String, String> getParams() throws AuthFailureError {
         Map<String,String> params = new HashMap<>();
-        params.put("username", Username);
-        params.put("password", Password);
+        params.put("username", Username.getText().toString());
+        params.put("password", Password.getText().toString());
         return params;
         }
         };
