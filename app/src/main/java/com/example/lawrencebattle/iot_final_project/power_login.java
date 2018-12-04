@@ -24,8 +24,8 @@ import java.util.Map;
 
 public class power_login extends AppCompatActivity implements View.OnClickListener {
     public TextView SenseView;
-    public Text Password, Username;
-    public Button Login;
+    public Text password3, username3;
+    public Button login3;
     private ProgressDialog progressDialog;
 
     @Override
@@ -42,12 +42,12 @@ public class power_login extends AppCompatActivity implements View.OnClickListen
         //PasswordIP = (EditText) findViewById(R.id.PasswordIP);
 
         //Declare Buttons
-        Login = (Button) findViewById(R.id.Login);
+        login3 = (Button) findViewById(R.id.login3);
 
 
 
         //Action Listeners
-        Login.setOnClickListener(power_login.this);
+        login3.setOnClickListener(power_login.this);
 
 
         //progress dialog
@@ -114,8 +114,8 @@ public class power_login extends AppCompatActivity implements View.OnClickListen
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> params = new HashMap<>();
-                params.put("username", Username);
-                params.put("password", Password);
+                params.put("username", username3);
+                params.put("password", password3);
                 return params;
             }
         };
@@ -128,7 +128,7 @@ public class power_login extends AppCompatActivity implements View.OnClickListen
     public void onClick(View v) {
         switch (v.getId()) {
 
-            case R.id.Login:
+            case R.id.login3:
 
              // NEED TO CREATE a power_user class
              //   Intent intent = new Intent(getApplicationContext(), power_user.class);

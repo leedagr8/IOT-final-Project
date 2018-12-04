@@ -133,8 +133,8 @@ public class util_login extends AppCompatActivity implements View.OnClickListene
             case R.id.login2:
 
 
-                Intent intent = new Intent(getApplicationContext(), power_utility.class);
-                startActivity(intent);
+                Intent intent8 = new Intent(getApplicationContext(), power_utility.class);
+                startActivity(intent8);
                 break;
 
 
