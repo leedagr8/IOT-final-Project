@@ -7,86 +7,105 @@
     tools:context=".Switch">
 
     <Button
-        android:id="@+id/Util-Log"
+        android:id="@+id/UtilLog"
         android:layout_width="243dp"
         android:layout_height="60dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="Utility-Log In"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="414dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Utilreg" />
 
     <Button
-        android:id="@+id/Pow-Log"
+        android:id="@+id/PowLog"
         android:layout_width="243dp"
         android:layout_height="60dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="Power Gen-Log In"
+        app:layout_constraintBottom_toTopOf="@+id/Utilreg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="243dp" />
+        app:layout_constraintTop_toBottomOf="@+id/PowReg" />
 
     <Button
-        android:id="@+id/Home-Log"
+        android:id="@+id/HomeLog"
         android:layout_width="243dp"
         android:layout_height="60dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="Home Owner-Log "
+        app:layout_constraintBottom_toTopOf="@+id/PowReg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="97dp" />
+        app:layout_constraintTop_toBottomOf="@+id/HomeReg" />
 
     <Button
-        android:id="@+id/Util-reg"
+        android:id="@+id/Utilreg"
         android:layout_width="243dp"
         android:layout_height="59dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="Utility-Register"
+        app:layout_constraintBottom_toTopOf="@+id/UtilLog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="331dp" />
+        app:layout_constraintTop_toBottomOf="@+id/PowLog" />
 
     <Button
-        android:id="@+id/Pow-Reg"
+        android:id="@+id/PowReg"
         android:layout_width="243dp"
         android:layout_height="60dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="Power Gen-Register"
+        app:layout_constraintBottom_toTopOf="@+id/PowLog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="173dp" />
+        app:layout_constraintTop_toBottomOf="@+id/HomeLog" />
 
     <Button
-        android:id="@+id/Home-Reg"
+        android:id="@+id/HomeReg"
         android:layout_width="243dp"
         android:layout_height="60dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="Home Owner-Register"
+        app:layout_constraintBottom_toTopOf="@+id/HomeLog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 </android.support.constraint.ConstraintLayout>

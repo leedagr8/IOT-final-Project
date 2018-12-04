@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public TextView SenseView;
    // public EditText UserNameIP, PasswordIP;
-    public Button LoginButton, ResetButton, Register;
+    public Button Continue;
     private ProgressDialog progressDialog;
 
     @Override
@@ -43,15 +43,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //PasswordIP = (EditText) findViewById(R.id.PasswordIP);
 
         //Declare Buttons
-        LoginButton = (Button) findViewById(R.id.LoginButton);
-        ResetButton = (Button) findViewById(R.id.ResetButton);
-        Register = (Button) findViewById(R.id.Register);
+        Continue = (Button) findViewById(R.id.Continue);
+
 
 
         //Action Listeners
-        LoginButton.setOnClickListener(MainActivity.this);
-        ResetButton.setOnClickListener(MainActivity.this);
-        Register.setOnClickListener(MainActivity.this);
+        Continue.setOnClickListener(MainActivity.this);
+
 
         //progress dialog
         progressDialog = new ProgressDialog(this);
