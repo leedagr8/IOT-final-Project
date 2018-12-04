@@ -19,15 +19,17 @@ import com.android.volley.toolbox.StringRequest;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
+import java.net.PasswordAuthentication;
 import java.util.HashMap;
 import java.util.Map;
 
 
 public class HomeLogin extends AppCompatActivity implements View.OnClickListener {
 public TextView SenseView;
-// public EditText UserNameIP, PasswordIP;
-public Button LoginButton, ResetButton, Register;
+public Text Password, Username;
+public Button Login;
 private ProgressDialog progressDialog;
 
 @Override
@@ -44,15 +46,13 @@ protected void onCreate(Bundle savedInstanceState) {
         //PasswordIP = (EditText) findViewById(R.id.PasswordIP);
 
         //Declare Buttons
-        LoginButton = (Button) findViewById(R.id.LoginButton);
-        ResetButton = (Button) findViewById(R.id.ResetButton);
-        Register = (Button) findViewById(R.id.Register);
+        Login = (Button) findViewById(R.id.Login);
+
 
 
         //Action Listeners
-        LoginButton.setOnClickListener(MainActivity.this);
-        ResetButton.setOnClickListener(MainActivity.this);
-        Register.setOnClickListener(MainActivity.this);
+        Login.setOnClickListener(HomeLogin.this);
+
 
         //progress dialog
         progressDialog = new ProgressDialog(this);
@@ -118,8 +118,8 @@ public void onErrorResponse(VolleyError error) {
 @Override
 protected Map<String, String> getParams() throws AuthFailureError {
         Map<String,String> params = new HashMap<>();
-        params.put("username", username);
-        params.put("password", password);
+        params.put("username", Username);
+        params.put("password", Password);
         return params;
         }
         };
@@ -132,11 +132,11 @@ protected Map<String, String> getParams() throws AuthFailureError {
 public void onClick(View v) {
         switch (v.getId()) {
 
-        case R.id.Continue:
+        case R.id.Login:
 
 
         Intent intent = new Intent(getApplicationContext(), home_user.class);
-        // startActivity(intent);
+        startActivity(intent);
         break;
 
 
