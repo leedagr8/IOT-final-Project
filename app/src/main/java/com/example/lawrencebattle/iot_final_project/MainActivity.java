@@ -24,16 +24,46 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+<<<<<<< HEAD
     public Button ContinueButton;
 
+=======
+    public TextView SenseView;
+   // public EditText UserNameIP, PasswordIP;
+    public Button Continue;
+    private ProgressDialog progressDialog;
+>>>>>>> 6902bbabe9fe9d620c41de9fe960be55863e5f32
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
         //Declare Button
         ContinueButton = (Button) findViewById(R.id.Continue);
+=======
+        //Declare TextView
+        SenseView = (TextView) findViewById(R.id.SenseView);
+
+        //Declare EditText
+        //removed this from homep page
+       // UserNameIP = (EditText) findViewById(R.id.UserNameIP);
+        //PasswordIP = (EditText) findViewById(R.id.PasswordIP);
+
+        //Declare Buttons
+        Continue = (Button) findViewById(R.id.Continue);
+
+
+
+        //Action Listeners
+        Continue.setOnClickListener(MainActivity.this);
+
+
+        //progress dialog
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("Please wait...");
+>>>>>>> 6902bbabe9fe9d620c41de9fe960be55863e5f32
 
         //Action Listener
         ContinueButton.setOnClickListener(MainActivity.this);

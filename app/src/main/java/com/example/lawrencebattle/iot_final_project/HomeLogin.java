@@ -22,14 +22,21 @@ import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
+import java.net.PasswordAuthentication;
 import java.util.HashMap;
 import java.util.Map;
 
 
 public class HomeLogin extends AppCompatActivity implements View.OnClickListener {
+<<<<<<< HEAD
 
 public EditText UserName, Password;
+=======
+public TextView SenseView;
+public EditText Password, Username;
+>>>>>>> 6902bbabe9fe9d620c41de9fe960be55863e5f32
 public Button Login;
 private ProgressDialog progressDialog;
 
@@ -38,15 +45,39 @@ protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_login);
 
+<<<<<<< HEAD
         // EditText
          UserName = (EditText) findViewById(R.id.Username);
          Password = (EditText) findViewById(R.id.Password);
+=======
+        //Declare TextView
+        SenseView = (TextView) findViewById(R.id.SenseView);
+
+        //Declare EditText
+        //removed this from homep page
+        // UserNameIP = (EditText) findViewById(R.id.UserNameIP);
+        //PasswordIP = (EditText) findViewById(R.id.PasswordIP);
+
+        //Declare Buttons
+        Login = (Button) findViewById(R.id.Login);
+
+
+        Username = findViewById(R.id.Username);
+        Password = findViewById(R.id.Password);
+
+>>>>>>> 6902bbabe9fe9d620c41de9fe960be55863e5f32
 
         //Login Button
         Login= (Button) findViewById(R.id.Login);
 
+<<<<<<< HEAD
         //Action Listener
         Login.setOnClickListener(HomeLogin.this);
+=======
+        //Action Listeners
+        Login.setOnClickListener(HomeLogin.this);
+
+>>>>>>> 6902bbabe9fe9d620c41de9fe960be55863e5f32
 
         //progress dialog
         progressDialog = new ProgressDialog(this);
@@ -118,8 +149,8 @@ public void onErrorResponse(VolleyError error) {
 @Override
 protected Map<String, String> getParams() throws AuthFailureError {
         Map<String,String> params = new HashMap<>();
-        params.put("username", username);
-        params.put("password", password);
+        params.put("username", Username.getText().toString());
+        params.put("password", Password.getText().toString());
         return params;
         }
         };
@@ -133,9 +164,15 @@ public void onClick(View v) {
         switch (v.getId()) {
 
         case R.id.Login:
+<<<<<<< HEAD
         userLogin();
 
         Intent intent = new Intent(getApplicationContext(), home_main.class);
+=======
+
+
+        Intent intent = new Intent(getApplicationContext(), home_user.class);
+>>>>>>> 6902bbabe9fe9d620c41de9fe960be55863e5f32
         startActivity(intent);
         break;
 

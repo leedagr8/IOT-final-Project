@@ -7,12 +7,18 @@
     tools:context=".Switch">
 
     <Button
+<<<<<<< HEAD
         android:id="@+id/ULog"
         android:layout_width="match_parent"
+=======
+        android:id="@+id/UtilLog"
+        android:layout_width="243dp"
+>>>>>>> 6902bbabe9fe9d620c41de9fe960be55863e5f32
         android:layout_height="60dp"
         android:layout_below="@+id/HLog"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+<<<<<<< HEAD
         android:layout_marginTop="-155dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
@@ -21,10 +27,27 @@
     <Button
         android:id="@+id/PLog"
         android:layout_width="match_parent"
+=======
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Utility-Log In"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Utilreg" />
+
+    <Button
+        android:id="@+id/PowLog"
+        android:layout_width="243dp"
+>>>>>>> 6902bbabe9fe9d620c41de9fe960be55863e5f32
         android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+<<<<<<< HEAD
         android:layout_marginTop="88dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
@@ -33,34 +56,81 @@
     <Button
         android:id="@+id/HLog"
         android:layout_width="match_parent"
+=======
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Power Gen-Log In"
+        app:layout_constraintBottom_toTopOf="@+id/Utilreg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PowReg" />
+
+    <Button
+        android:id="@+id/HomeLog"
+        android:layout_width="243dp"
+>>>>>>> 6902bbabe9fe9d620c41de9fe960be55863e5f32
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+<<<<<<< HEAD
         android:layout_marginBottom="190dp"
         android:text="Home Owner-Log " />
 
     <Button
         android:id="@+id/UReg"
         android:layout_width="match_parent"
+=======
+        android:layout_marginBottom="8dp"
+        android:text="Home Owner-Log "
+        app:layout_constraintBottom_toTopOf="@+id/PowReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomeReg" />
+
+    <Button
+        android:id="@+id/Utilreg"
+        android:layout_width="243dp"
+>>>>>>> 6902bbabe9fe9d620c41de9fe960be55863e5f32
         android:layout_height="59dp"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+<<<<<<< HEAD
         android:layout_marginBottom="23dp"
         android:text="Utility-Register" />
 
     <Button
         android:id="@+id/PReg"
         android:layout_width="match_parent"
+=======
+        android:layout_marginBottom="8dp"
+        android:text="Utility-Register"
+        app:layout_constraintBottom_toTopOf="@+id/UtilLog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PowLog" />
+
+    <Button
+        android:id="@+id/PowReg"
+        android:layout_width="243dp"
+>>>>>>> 6902bbabe9fe9d620c41de9fe960be55863e5f32
         android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+<<<<<<< HEAD
         android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
@@ -69,12 +139,43 @@
     <Button
         android:id="@+id/HReg"
         android:layout_width="match_parent"
+=======
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Power Gen-Register"
+        app:layout_constraintBottom_toTopOf="@+id/PowLog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomeLog" />
+
+    <Button
+        android:id="@+id/HomeReg"
+        android:layout_width="243dp"
+>>>>>>> 6902bbabe9fe9d620c41de9fe960be55863e5f32
         android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+<<<<<<< HEAD
         android:layout_marginTop="187dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Home Owner-Register" />
 </RelativeLayout>
+=======
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Home Owner-Register"
+        app:layout_constraintBottom_toTopOf="@+id/HomeLog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+</android.support.constraint.ConstraintLayout>
+>>>>>>> 6902bbabe9fe9d620c41de9fe960be55863e5f32
