@@ -8,14 +8,17 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -25,9 +28,9 @@ import java.util.Map;
 
 
 public class HomeLogin extends AppCompatActivity implements View.OnClickListener {
-public TextView SenseView;
-// public EditText UserNameIP, PasswordIP;
-public Button LoginButton, ResetButton, Register;
+
+public EditText UserName, Password;
+public Button Login;
 private ProgressDialog progressDialog;
 
 @Override
@@ -35,38 +38,35 @@ protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_login);
 
-        //Declare TextView
-        SenseView = (TextView) findViewById(R.id.SenseView);
+        // EditText
+         UserName = (EditText) findViewById(R.id.Username);
+         Password = (EditText) findViewById(R.id.Password);
 
-        //Declare EditText
-        //removed this from homep page
-        // UserNameIP = (EditText) findViewById(R.id.UserNameIP);
-        //PasswordIP = (EditText) findViewById(R.id.PasswordIP);
+        //Login Button
+        Login= (Button) findViewById(R.id.Login);
 
-        //Declare Buttons
-        LoginButton = (Button) findViewById(R.id.LoginButton);
-        ResetButton = (Button) findViewById(R.id.ResetButton);
-        Register = (Button) findViewById(R.id.Register);
-
-
-        //Action Listeners
-        LoginButton.setOnClickListener(MainActivity.this);
-        ResetButton.setOnClickListener(MainActivity.this);
-        Register.setOnClickListener(MainActivity.this);
+        //Action Listener
+        Login.setOnClickListener(HomeLogin.this);
 
         //progress dialog
         progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage("Please wait...");
+
 
 
         }
 
 
 private void userLogin(){
-        //final String username = UserNameIP.getText().toString().trim();
-        // final String password = PasswordIP.getText().toString().trim();
+        final String username = UserName.getText().toString().trim();
+         final String password = Password.getText().toString().trim();
+
+        progressDialog.setMessage("Please wait...");
 
         progressDialog.show();
+
+
+        RequestQueue requestQueue = Volley.newRequestQueue(HomeLogin.this);
+
 
         StringRequest stringRequest = new StringRequest( //used to send post method
         Request.Method.POST,
@@ -124,7 +124,7 @@ protected Map<String, String> getParams() throws AuthFailureError {
         }
         };
 
-        //  RequestHandler.getInstance(this).addToRequestQueue(stringRequest);
+        requestQueue.add(stringRequest);
 
         }
 
@@ -132,11 +132,11 @@ protected Map<String, String> getParams() throws AuthFailureError {
 public void onClick(View v) {
         switch (v.getId()) {
 
-        case R.id.Continue:
+        case R.id.Login:
+        userLogin();
 
-
-        Intent intent = new Intent(getApplicationContext(), home_user.class);
-        // startActivity(intent);
+        Intent intent = new Intent(getApplicationContext(), home_main.class);
+        startActivity(intent);
         break;
 
 

@@ -24,39 +24,19 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    public TextView SenseView;
-   // public EditText UserNameIP, PasswordIP;
-    public Button LoginButton, ResetButton, Register;
-    private ProgressDialog progressDialog;
+    public Button ContinueButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Declare TextView
-        SenseView = (TextView) findViewById(R.id.SenseView);
+        //Declare Button
+        ContinueButton = (Button) findViewById(R.id.Continue);
 
-        //Declare EditText
-        //removed this from homep page
-       // UserNameIP = (EditText) findViewById(R.id.UserNameIP);
-        //PasswordIP = (EditText) findViewById(R.id.PasswordIP);
-
-        //Declare Buttons
-        LoginButton = (Button) findViewById(R.id.LoginButton);
-        ResetButton = (Button) findViewById(R.id.ResetButton);
-        Register = (Button) findViewById(R.id.Register);
-
-
-        //Action Listeners
-        LoginButton.setOnClickListener(MainActivity.this);
-        ResetButton.setOnClickListener(MainActivity.this);
-        Register.setOnClickListener(MainActivity.this);
-
-        //progress dialog
-        progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage("Please wait...");
-
+        //Action Listener
+        ContinueButton.setOnClickListener(MainActivity.this);
 
     }
 
@@ -68,13 +48,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.Continue:
 
-
                Intent intent = new Intent(MainActivity.this, Switch.class);
-               // startActivity(intent);
+                startActivity(intent);
                break;
-
-
-
 
         }
     }

@@ -29,8 +29,8 @@ import java.util.Map;
 public class NewUser extends AppCompatActivity implements View.OnClickListener  {
 
     public TextView RegisterPage;
-    public EditText FullName, NewUser,NewPassword,ConfirmPassword,Email,PhoneNumber;
-    public Button NewRegister, Back, Register;
+    public EditText FullName, NewUser,NewPassword,Email,PhoneNumber;
+    public Button NewRegister, Back;
     public CheckBox Consumer,PowerUtility,UtilityCompany;
     public ProgressDialog dialog; // Used for my dialog to user on registration
 
@@ -47,31 +47,17 @@ public class NewUser extends AppCompatActivity implements View.OnClickListener  
         FullName = (EditText) findViewById(R.id.FullName);
         NewUser = (EditText) findViewById(R.id.NewUser);
         NewPassword = (EditText) findViewById(R.id.NewPassword);
-        ConfirmPassword = (EditText) findViewById(R.id.ConfirmPassword);
         Email = (EditText) findViewById(R.id.Email);
         PhoneNumber = (EditText) findViewById(R.id.PhoneNumber);
 
         //Declare Buttons
         NewRegister = (Button) findViewById(R.id.NewRegister);
-        Register = (Button) findViewById(R.id.Register);
         Back = (Button) findViewById(R.id.Back);
-
-        //check box
-        Consumer = (CheckBox) findViewById(R.id.Consumer);
-        PowerUtility = (CheckBox) findViewById(R.id.PowerUtility);
-        UtilityCompany = (CheckBox) findViewById(R.id.UtilityCompany);
-
 
 
         //Action Listeners
         NewRegister.setOnClickListener((View.OnClickListener) NewUser.this);
-        //Register.setOnClickListener((View.OnClickListener) NewUser.this);
         Back.setOnClickListener((View.OnClickListener) NewUser.this);
-        Consumer.setOnClickListener((View.OnClickListener) NewUser.this);
-        PowerUtility.setOnClickListener((View.OnClickListener) NewUser.this);
-        UtilityCompany.setOnClickListener((View.OnClickListener) NewUser.this);
-
-
     }
 
     //Function to Register User into Database
@@ -83,15 +69,6 @@ public class NewUser extends AppCompatActivity implements View.OnClickListener  
         final String name = FullName.getText().toString().trim();
         final String username = NewUser.getText().toString().trim();
         final String phone = PhoneNumber.getText().toString().trim();
-        //  String confirmation = ConfirmPassword.getText().toString().trim();
-        //boolean confirmed = false; // make sure the passwords match
-
-
-        // while(!confirmation.equals(password)){
-        //  Toast.makeText(getApplicationContext(), "Password does not match.", Toast.LENGTH_SHORT).show();
-
-        //}
-
 
         //Since this is a network request and will take time to register. I will display a Progess message to user.
 
@@ -99,6 +76,7 @@ public class NewUser extends AppCompatActivity implements View.OnClickListener  
         dialog.show();
 
 
+        RequestQueue requestQueue = Volley.newRequestQueue(NewUser.this);
 
 
 
@@ -144,7 +122,6 @@ public class NewUser extends AppCompatActivity implements View.OnClickListener  
             }
         };
 
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
      //   RequestHandler.getInstance(this).addToRequestQueue(stringRequest);
     }
@@ -155,13 +132,13 @@ public class NewUser extends AppCompatActivity implements View.OnClickListener  
 
             case R.id.NewRegister:
                 registerUser();
-                Intent newRegisterIntent = new Intent(NewUser.this, NewUser.class);
+                Intent newRegisterIntent = new Intent(NewUser.this, MainActivity.class);
                 startActivity(newRegisterIntent);
                 break;
 
 
             case R.id.Back:
-                Intent intent = new Intent(NewUser.this, MainActivity.class);
+                Intent intent = new Intent(NewUser.this, Switch.class);
                 startActivity(intent);
                 break;
         }

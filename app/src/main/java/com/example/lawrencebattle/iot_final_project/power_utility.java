@@ -1,5 +1,6 @@
 package com.example.lawrencebattle.iot_final_project;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,7 @@ public class power_utility extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_power_utility);
 
 
         //Declare Buttons
@@ -30,6 +31,10 @@ public class power_utility extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
+
+        if(v == logout_button){
+            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+        }
 
     }
 }

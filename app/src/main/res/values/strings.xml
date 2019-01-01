@@ -26,4 +26,5 @@
     <string name="view_generators">View Generators</string>
     <string name="market">Market</string>
     <string name="manage_generators">Manage Generators</string>
+    <string name="title_activity_alarm_system">AlarmSystem</string>
 </resources>

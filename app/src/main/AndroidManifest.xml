@@ -24,8 +24,12 @@
         <activity android:name=".utility" />
         <activity android:name=".Switch" />
         <activity android:name=".HomeLogin" />
-        <activity android:name=".power_login" />
-        <activity android:name=".util_login"></activity>
+        <activity android:name=".home_main" />
+        <activity android:name=".PowerReg" />
+        <activity android:name=".UtilReg" />
+        <activity android:name=".powerlogin" />
+        <activity android:name=".utillogin" />
+        <activity android:name=".alarmSystem" />
     </application>
 
 </manifest>
